@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+:root {
+  --darkblue-color: hsl(233, 26%, 24%);
+  --limegreen-color: hsl(136, 65%, 51%);
+  --brightcyan-color: hsl(192, 70%, 51%);
+  --grayishblue-color: hsl(233, 8%, 62%);
+  --lightgrayishblue: hsl(220, 16%, 96%);
+  --verylightgray-color: hsl(0, 0%, 98%);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Nav bar styles */
+
+nav {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  box-shadow: 1px 0.5px 3px #d0cfcf;
+}
+
+nav img {
+  width: 6rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+nav ul li {
+  font-size: 16px;
+  color: var(--grayishblue-color);
+  font-weight: 500;
+}
+
+nav ul li:hover {
+  color: var(--limegreen-color);
+}
+
+nav button {
+  outline: none;
+  border: none;
+  padding: 12px 30px;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+
+nav .open-btn {
+  width: 1rem;
+  display: none;
+}
+
+/* Navbar media query */
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 20px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 20px 40px;
+  }
+
+  nav .open-btn {
+    display: block;
+  }
+
+  nav ul,
+  nav button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    padding: 20px;
+  }
+}
+
+
+/* hero section */
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 80px;
+  justify-content: space-between;
+}
+
+.hero-section .hero1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-section .hero1 h1 {
+  font-size: 40px;
+  color: var(--darkblue-color);
+  font-weight: 300;
+}
+
+.hero-section .hero1 p {
+  font-size: 16px;
+  color: var(--grayishblue-color);
+  font-weight: 500;
+}
+
+.hero-section .hero1 button {
+  width: fit-content;
+  outline: none;
+  border: none;
+  padding: 12px 30px;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero-section img {
+  width: 40%;
+}
+
+
+/* hero section media query */
+
+
